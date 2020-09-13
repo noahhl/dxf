@@ -96,6 +96,10 @@ func ParseHeader(d *drawing.Drawing, line int, data [][2]string) error {
 func ParseClasses(d *drawing.Drawing, line int, data [][2]string) error {
 	return nil
 }
+// ParseClasses parses CLASSES section.
+func ParseAcdsData(d *drawing.Drawing, line int, data [][2]string) error {
+	return nil
+}
 
 // TABLES
 

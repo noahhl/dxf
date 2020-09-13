@@ -21,6 +21,7 @@ const (
 	BLOCKS
 	ENTITIES
 	OBJECTS
+	ACDSDATA
 )
 
 // SectionTypeString converts SectionType to string.
@@ -39,6 +40,8 @@ func SectionTypeString(s SectionType) string {
 		return "ENTITIES"
 	case OBJECTS:
 		return "OBJECTS"
+	case ACDSDATA:
+		return "ACDSDATA"
 	default:
 		return ""
 	}
@@ -60,6 +63,8 @@ func SectionTypeValue(s string) SectionType {
 		return ENTITIES
 	case "OBJECTS":
 		return OBJECTS
+	case "ACDSDATA":
+		return ACDSDATA
 	default:
 		return -1
 	}

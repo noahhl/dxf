@@ -56,6 +56,7 @@ func FromReader(r io.Reader) (*drawing.Drawing, error) {
 		ParseBlocks,
 		ParseEntities,
 		ParseObjects,
+		ParseAcdsData,
 	}
 	data := make([][2]string, 0)
 	setparser := false
